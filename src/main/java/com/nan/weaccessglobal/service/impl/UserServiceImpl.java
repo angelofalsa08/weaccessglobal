@@ -1,6 +1,7 @@
 package com.nan.weaccessglobal.service.impl;
 
 import com.nan.weaccessglobal.dto.request.ChangePasswordRequest;
+import com.nan.weaccessglobal.dto.request.RegisterRequest;
 import com.nan.weaccessglobal.model.User;
 import com.nan.weaccessglobal.repository.UserRepository;
 import com.nan.weaccessglobal.service.UserService;
@@ -36,5 +37,15 @@ public class UserServiceImpl implements UserService {
 
         // save the new password
         repository.save(user);
+    }
+
+    @Override
+    public void updateProfile(RegisterRequest updateProfile) {
+
+    }
+
+    @Override
+    public void getProfileDetails(Integer ambId) {
+
     }
 }
